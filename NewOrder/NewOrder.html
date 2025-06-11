@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewOrder</title>
+    <link rel="stylesheet" href="style_new_order.css">
+    <script type="module" src="NewOrder_Script.js"></script>
+</head>
+<body>
+    <div id="location_header">
+       <a href="https://lottie.host/embed/5abee89b-7012-46ca-91a4-b407d86f1f14/1wu12JhWV8.lottie"> # dashboard </a> > <a href="NewOrder.html"> # New Order </a>
+    </div>
+    <div id="main_container">
+        <h1 id="new_order_header">Create New Order</h1>
+        <hr id="horizontal_row">
+        <!--Comment-->
+        <p id="instruction_para">
+            <ol>
+                <li>Double-check your information to make sure everything is correct.</li>
+                <li>Click the "Create" button to submit your request.</li>
+            </ol>
+        </p>
+        <!--Thhis is where the input filed form starts-->
+        <div id="order_form">
+            <div class="sides" id="form_left_side">
+                <label for="gate_pass">
+                    <b>Gate Pass [MSEDCL -> SPEC]*</b><br>
+                <input type="text" name="gate_pass" id="gate_pass" placeholder="Enter Gate Pass" required>
+                <br>
+                </label><br><br>
+                <label for="capacity">
+                    <b>Capacity (Kv)*</b>
+                <br>
+                <input type="number" name="capacity" id="capacity" placeholder="Enter capacity in Kv" required>
+                <br>
+                </label><br><br>
+                <label for="Status">
+                    <b>Status of Transformer*</b>
+                    <br>
+                    <input type="text" name="status" id="status" placeholder="Status of Transformer" required>
+                    <br>
+                </label><br><br>
+                <label for="Faults">
+                    <b>Faults</b>
+                    <br>
+                    <textarea id="faults" rows="8" placeholder="Faults in trasformer"></textarea>
+                    <br>
+                </label>
+            </div>
+            <div class="sides" id="form_right_side">
+                <label for="serial_no">
+                    <b>Serial No*</b>
+                    <br>
+                    <input type="text" name="serial_no" id="serial_no" placeholder="Enter serial no." required>
+                    <br>
+                </label><br><br>
+                <label for="OilLevel">
+                    <b>Oil level*</b>
+                    <br>
+                    <input type="number" name="OilLevel" id="oil_level" placeholder="Enter Oil level" required>
+                    <br>
+                </label><br><br>
+                <label for="date_received">
+                    <b>Date Received*</b>
+                    <br>
+                    <input type="date" name="date_received" id="date_received" required>
+                    <br>
+                </label>
+                <br><br>
+                <label for="Winding_type">
+                    <b>Winding Type</b>
+                    <br>
+                    <select name="Winding_type" id="winding_type">
+                        <option value="none" selected>None</option>
+                        <option value="Copper">Copper</option>
+                        <option value="Aluminium">Aluminium</option>
+                    </select>
+                    <br>
+                </label>
+            </div>
+        </div>
+        <h4><input type="checkbox" name="TaC" id="TaC">  Sure you want to create a order</h4><br>
+        <button id="create_order_btn">&#43; Create Order</button><br>
+    </div>
+</body>
+</html>

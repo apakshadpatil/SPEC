@@ -1,0 +1,138 @@
+#location_header{
+    height: max-content;
+    width: 98%;
+    padding:5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 10px;
+    border-radius: 5px;
+    font-size: large;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 3px gray;
+}
+#main_container{
+    height: 90%;
+    width: 97%;
+    margin: auto;
+    position: absolute;
+        top: 2.5%;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    display: flex;
+    gap: 20px;
+    align-content: stretch;
+}
+.item_main_container{
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.501);
+}
+.item_main_conatiner:nth-child(1){
+    flex-grow: 1;
+}
+.item_main_conatiner:nth-child(2){
+    width:30%;
+}
+#pendingTransformer_Section{
+    background-color: white;
+    width:70%;
+}
+#Timeline_Section{
+    background-color: rgb(27, 39, 95);
+    width: 30%;
+}
+#PendingOrders_header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 2%;
+}
+#hr_row_ls_po{
+    width:95.5%;
+    background-color: rgba(128, 128, 128, 0.512);
+}
+#pending_order_table{
+    width: 90%;
+    overflow-x: scroll;
+    table-layout: auto;  /* allow columns to size based on content */
+    width: auto;
+    margin: auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+td{
+    padding: 5px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: fit-content;
+    white-space: nowrap;
+}
+td:nth-child(1)
+{
+    padding-left: 20px;
+}
+tr:nth-child(even) {
+    background-color: rgba(176, 176, 176, 0.378);
+}
+th{
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: left;
+    padding-right: 15px;
+    padding: 5px;
+    color: white;
+    background-color: rgba(12, 17, 56, 0.831);
+}
+th:nth-child(1)
+{
+    text-indent: 15px;
+}
+#table_content{
+    height: 82.5%;
+    width:95%;
+    margin: auto;
+    padding: 10px;
+    overflow: scroll;
+}
+#Timeline_header{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 5%;
+}
+#hr_row_rs_tl{
+    width:90%;
+    background-color: rgba(128, 128, 128, 0.283);
+}
+#timeline_display_box{
+    height: 88%;
+    width: 95%;
+    overflow-y: scroll;
+    border: 1px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgrey;
+    margin: auto;
+}
+.timeline_data{
+    list-style-type: none;
+    color:rgb(142, 142, 142);
+}
+#timestamp{
+    color:white;
+}
+#noOrderSelected{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+#update_timeline{
+    height:5%;
+    width: 95%;
+    margin: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 3%;
+    border:none;
+    font-size: 18px;
+    background-color: rgb(0, 102, 255);
+    color: white;
+    border-radius: 10px;
+}
