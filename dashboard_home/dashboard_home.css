@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #2c3e50;
+}
+
+header {
+  background-color: #34495e;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+.main-container {
+  padding: 5% 8%;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  gap: 3%;
+}
+
+.stat-box {
+  flex: 1;
+  padding: 4%;
+  border-radius: 15px;
+  background-color: #d6eaf8; /* Soft blue solid color */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-3px);
+}
+
+.stat-box h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #2980b9;
+}
+
+.stat-box p {
+  margin-top: 8px;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.tables-wrapper {
+  background: #fff;
+  padding: 5%;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scrollable-table {
+  width: 100%;
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 2%;
+  border-radius: 12px;
+}
+
+.scrollable-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+table th, table td {
+  padding: 0.5% 1%;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.88rem;
+  height: 28px;
+  line-height: 1.2;
+}
+
+table th {
+  background-color: #ecf0f1;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.side-tables {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 3%;
+  margin-top: 5%;
+}
+
+.side-tables > div {
+  width: 48%;
+}
+
+.table-heading {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 2% 0 1%;
+  color: #2c3e50;
+}

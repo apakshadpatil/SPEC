@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Completed Orders</title>
+  <link rel="stylesheet" href="completed_orders.css" />
+</head>
+<body>
+  <header>
+    <a href="#dashboard" id="dashboardLink">Dashboard</a> &gt; 
+    <a href="#completedOrders" id="completedOrdersLink">Completed Orders</a>
+  </header>
+
+  <div class="main-container">
+    <div class="stats-container">
+      <div class="stat-box">
+        <h2 id="stat1">45</h2>
+        <p>Pending Orders</p>
+      </div>
+      <div class="stat-box">
+        <h2 id="stat2">32</h2>
+        <p>Completed Orders</p>
+      </div>
+      <div class="stat-box">
+        <h2 id="stat3">13</h2>
+        <p>Money Spent</p>
+      </div>
+    </div>
+
+    <div class="tables-wrapper">
+      <div class="table-container">
+        <div class="table-heading">Completed Order Overview</div>
+        <div class="scrollable-table">
+          <table id="centerTable">
+            <thead>
+              <tr>
+                <th>Serial No.</th>
+                <th>Ref ID</th>
+                <th>Gate pass No SPEC to MSEDCL</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>REF1234</td><td>GP001</td><td>2024-06-10</td></tr>
+              <tr><td>2</td><td>REF1235</td><td>GP002</td><td>2024-06-09</td></tr>
+              <tr><td>3</td><td>REF1236</td><td>GP003</td><td>2024-06-08</td></tr>
+              <tr><td>4</td><td>REF1237</td><td>GP004</td><td>2024-06-07</td></tr>
+              <tr><td>5</td><td>REF1238</td><td>GP005</td><td>2024-06-06</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="side-tables">
+          <div>
+            <div class="table-heading">Finance Overview</div>
+            <div class="scrollable-table">
+              <table id="leftTable">
+                <thead>
+                  <tr><th>ID</th><th>Item</th><th>Qty</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>F001</td><td>Wire</td><td>10</td></tr>
+                  <tr><td>F002</td><td>Switch</td><td>5</td></tr>
+                  <tr><td>F003</td><td>Meter</td><td>3</td></tr>
+                  <tr><td>F004</td><td>Cable</td><td>8</td></tr>
+                  <tr><td>F005</td><td>Box</td><td>2</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <div class="table-heading">Material Overview</div>
+            <div class="scrollable-table">
+              <table id="rightTable">
+                <thead>
+                  <tr><th>Material name/image</th><th>Cost</th><th>Paid By</th><th>Quantity</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Copper Wire</td><td>₹500</td><td>John</td><td>10m</td></tr>
+                  <tr><td>Plastic Case</td><td>₹150</td><td>Alice</td><td>5</td></tr>
+                  <tr><td>Breaker</td><td>₹300</td><td>Bob</td><td>3</td></tr>
+                  <tr><td>Fuse</td><td>₹100</td><td>Tom</td><td>4</td></tr>
+                  <tr><td>Panel</td><td>₹700</td><td>Emma</td><td>2</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
