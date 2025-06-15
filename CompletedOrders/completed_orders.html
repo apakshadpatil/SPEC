@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Completed Orders</title>
+  <link rel="stylesheet" href="completed_orders.css" />
+</head>
+<body>
+  <header>
+    <a href="#">Dashboard</a> &gt; 
+    <a href="#">Completed Orders</a>
+  </header>
+
+  <div class="main-container">
+    <div class="table-heading">All Completed Orders</div>
+    <div class="orders-list">
+  <!-- Column headers -->
+  <div class="order-row order-header">
+    <div>#</div>
+    <div>Order ID</div>
+    <div>Gate Pass</div>
+    <div>Status</div>
+    <div>Actions</div>
+  </div>
+
+  <!-- Sample order items -->
+  <div class="order-row clickable" data-id="1">
+    <div>1</div>
+    <div>ORD001</div>
+    <div>GP001</div>
+    <div class="status completed">Completed</div>
+    <button class="view-btn">View</button>
+  </div>
+  <div class="order-row clickable" data-id="2">
+    <div>2</div>
+    <div>ORD002</div>
+    <div>GP002</div>
+    <div class="status pending">Pending</div>
+    <button class="view-btn">View</button>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Sliding Detail Panel -->
+  <div class="detail-panel" id="detailPanel">
+    <span class="close-btn" onclick="closeDetails()">×</span>
+    <h2>Order Details</h2>
+    <div id="orderDetailsContent">
+      <p><strong>Order ID:</strong> ORD001</p>
+      <p><strong>Gate Pass:</strong> GP001</p>
+      <p><strong>Status:</strong> Completed</p>
+      <p><strong>Date:</strong> 2024-06-10</p>
+      <p><strong>Items:</strong> Wire x 10, Switch x 5</p>
+    </div>
+    <div class="action-buttons">
+  <button onclick="generateReport()">Generate Report</button>
+  <button onclick="editConfig()">Edit Configuration Details</button>
+  <button onclick="markAsUndone()">Mark as Undone</button>
+  <button onclick="generateBill()">Generate Bill</button>
+  <button onclick="generateGatePass()">Generate Gate Pass Bill</button>
+</div>
+
+  </div>
+
+  <script src="completed_orders.js"></script>
+</body>
+</html>
